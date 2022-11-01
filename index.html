@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulador de plazo fijo - Moya</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header id="header">
+    <div class="title">
+      <h1>Simulador de Plazo Fijo</h1>
+    </div>
+  </header>
+  <main>
+    <section>
+      <p class="parrafo">
+        Con este simulador vas a poder averiguar cuál banco te conviene más!
+      </p>
+      <div class="container">
+        <div class="contenidoFormulario">
+          <h2>Simulador</h2>
+          <form id="formulario">
+            <div>
+              <label class="capLabel" for="capitalInvertir">Capital a Invertir:</label>
+              <input class="controladorFormulario" id="capital" type="number" placeholder="Minimo $1000.-" min="1000"
+                required />
+            </div>
+            <div>
+              <label class="capLabel" for="plazo">Plazo (en días mínimo 30 - máximo 365):</label>
+              <input class="controladorFormulario" id="duracion" type="number" banco min="30" max="365"
+                placeholder="Minimo 30 dias" required />
+            </div>
+            <div class="contenedorPlazoFijo">
+              <div class="filaPlazo">
+                <label for="tipo">Elegí el tipo de plazo fijo:</label>
+                <select id="tipoPF" name="tipoPF">
+                  <option value="">Seleccione un plazo</option>
+                  <option value="Pesos">Plazo fijo en pesos</option>
+                  <option value="Dólares">Plazo fijo en dólares</option>
+                </select>
+              </div>
+              <div class="filaBanco">
+                <label for="tipo">Elegí el banco: </label>
+                <select id="nombreBancos" name="nombreBancos">
+                  <option value="">Seleccione un banco</option>
+                </select>
+              </div>
+            </div>
+            <div class="botones">
+              <button id="boton" type="submit" value="Calcular" class="boton botonPrimario">Calcular</button>
+              <button id="botonReset" type="reset" value="Restablecer" class="boton botonPrimario">Restablecer</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="containerTable">
+        <h3>Resultado</h3>
+        <table class="table" id="tabla">
+          <thead>
+            <tr>
+              <th>Canal</th>
+              <th>Electrónico</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Banco elegido</td>
+              <td id="banco"></td>
+            </tr>
+            <tr>
+              <td>Capital</td>
+              <td id="mostrarCapital"></td>
+            </tr>
+            <tr>
+              <td>Plazo</td>
+              <td id="mostrarPlazo"></td>
+            </tr>
+            <tr>
+              <td>Tipo de plazo fijo</td>
+              <td id="tipoPfValue"></td>
+            </tr>
+            <tr>
+              <td>Intereses Ganados</td>
+              <td id="mostrarInteresesGanados"></td>
+            </tr>
+            <tr>
+              <td>Monto total</td>
+              <td id="mostrarMontoTotal"></td>
+            </tr>
+            <tr>
+              <td>Tasa nominal anual</td>
+              <td id="mostrarTna"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+
+    <section id="contact" class="contact">
+      <div class="content-section">
+        <h2>Contacto</h2>
+        <div class="row">
+          <div class="col">
+            <form>
+              <input type="text" name="name" placeholder="Ingrese su Nombre" required>
+              <input type="text" name="Last name" placeholder="Ingrese su Apellido" required>
+              <input type="text" name="subjet" placeholder="Ingrese el Asunto" required>
+              <input type="email" name="email" placeholder="Ingrese su Email" required>
+              <textarea name="comments" id="" cols="30" rows="10" placeholder="Ingrese su Comentario" required></textarea>
+              <input id="button" type="submit" value="Enviar">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <footer>
+      <div class="containerFooter">
+        <ul class="listaFooter">
+          <li>
+            <a href="https://www.linkedin.com/in/jonathan-emanuel-moya/">LinkedIn</a>
+          </li>
+          <li>
+            <a href="https://jonathanemanuelmoya.github.io/my-portfolio/">Portfolio</a>
+          </li>
+          <li>
+            <a href="https://github.com/JonathanEmanuelMoya">Github</a>
+          </li>
+        </ul>
+        <p>© Creado por Jonathan Emanuel Moya 2022. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </main>
+  <script src="jquery-3.6.0.js"></script>
+  <script src="mainscript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+[
+  {
+    "banco": "Banco Nación",
+    "tna": 41
+  },
+
+  {
+    "banco": "Banco Francés",
+    "tna": 37
+  },
+
+  {
+    "banco": "Banco Galicia",
+    "tna": 35
+  },
+
+  {
+    "banco": "Banco Provincia",
+    "tna": 41
+  },
+
+  {
+    "banco": "Banco Ciudad",
+    "tna": 41
+  },
+
+  {
+    "banco": "Santander Rio",
+    "tna": 33
+  },
+
+  {
+    "banco": "HSBC",
+    "tna": 32
+  },
+
+  {
+    "banco": "ICBC",
+    "tna": 35
+  }
+]
