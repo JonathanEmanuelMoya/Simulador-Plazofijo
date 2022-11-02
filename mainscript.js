@@ -37,7 +37,7 @@ $("#nombreBancos").change(function () {
   let textoBanco = valorBancoTexto.text();
   $("#banco").html(textoBanco);
   $("#mostrarTna").html(valorBanco);
-  calcular();
+ 
 });
 
 $("#tipoPF").change(function () {
